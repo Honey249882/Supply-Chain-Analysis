@@ -1,127 +1,130 @@
-Supply Chain Delay Analysis & Prediction
-📌 Project Overview
+# 📦 Supply Chain Delay Analysis & Prediction
+
+## 📌 Project Overview
 
 This project analyzes a global e-commerce supply chain dataset to identify the root causes of delivery delays, evaluate their impact on profitability, and build a machine learning model to predict late deliveries.
 
-The project includes:
+---
 
-Exploratory Data Analysis (EDA)
-Data Cleaning & Feature Engineering
-Business KPI Analysis
-Delay Bottleneck Detection
-Root Cause Analysis
-Time-based Trend Analysis
-Machine Learning for Late Delivery Prediction
+## 🎯 Business Problem
 
-🎯 Business Problem
+A global e-commerce company experiences inconsistent delivery performance where actual shipping times frequently exceed scheduled delivery dates.
 
-A global e-commerce company experiences inconsistent delivery performance where actual shipping times frequently exceed scheduled delivery dates. These delays reduce customer satisfaction and affect order profitability.
+**Objectives:**
+- Analyze delivery performance
+- Identify bottlenecks causing delays
+- Improve operational efficiency
+- Predict late deliveries using Machine Learning
 
-The objective is to:
+---
 
-Analyze delivery performance
-Identify bottlenecks causing delays
-Understand profitability impact
-Predict late deliveries using Machine Learning
+## 🛠 Tech Stack
 
-📊 Dataset
-Rows: 172,765 (after cleaning)
-Features: 20
-Target Variable: Late_delivery_risk
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-Learn
+- SMOTE
 
-The dataset contains order, customer, shipping, product, and profit information used for operational analysis.
+---
 
-🛠️ Tech Stack
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Scikit-learn
-SMOTE (Imbalanced Learning)
-📈 Project Workflow
-1. Data Cleaning
-Removed duplicate and unnecessary columns
-Handled missing values
-Converted date columns
-Removed cancelled orders
-2. Feature Engineering
+## 📊 Dataset
 
-Created new business features such as:
+| Attribute | Value |
+|-----------|-------|
+| Records | 172,765 |
+| Features | 20 |
+| Target Variable | Late_delivery_risk |
 
-Order Processing Time
-Delivery Delay
-Delay Flag
-Order Month
-Order Day
-Order Hour
-Profitability Flag
-3. Exploratory Data Analysis
+---
 
-Performed analysis on:
+## 📈 Project Workflow
 
-Missing values
-Delivery status
-Shipping modes
-Customer segments
-Profitability distribution
-Delay distribution
-4. Business KPI Analysis
+### 1️⃣ Data Cleaning
+- Removed unnecessary columns
+- Converted date columns
+- Removed cancelled orders
+- Handled missing values
 
-Calculated important KPIs including:
+### 2️⃣ Feature Engineering
+- Order Processing Time
+- Delay
+- Delay Flag
+- Order Month
+- Order Hour
 
-Total Orders
-Late Deliveries
-On-Time Delivery %
-Late Delivery %
-Total Profit
-Total Profit Lost due to Delays
-90th Percentile Delay
-5. Root Cause Analysis
+### 3️⃣ Exploratory Data Analysis
+- Profitability Distribution
+- Delay Distribution
+- Customer Segment Analysis
+- Shipping Mode Analysis
 
-Analyzed delivery delays by:
+### 4️⃣ Business KPIs
+- Total Orders
+- Late Deliveries
+- On-Time Delivery %
+- Late Delivery %
+- Total Profit
+- Total Loss due to Delays
 
-Shipping Mode
-Customer Segment
-Department
-Order Region
-Order Status
-Payment Type
-6. Time-Based Analysis
+### 5️⃣ Root Cause Analysis
+- Shipping Mode
+- Customer Segment
+- Order Region
+- Department
+- Order Status
 
-Studied delay trends across:
+### 6️⃣ Time-Based Analysis
+- Monthly Trends
+- Weekly Trends
+- Hourly Trends
 
-Month
-Day of Week
-Hour of Day
-7. Machine Learning
+### 7️⃣ Machine Learning
 
-Model Used:
+**Model Used**
+- Random Forest Classifier
 
-Random Forest Classifier
+**Techniques**
+- Frequency Encoding
+- SMOTE
+- Train-Test Split
 
-Techniques:
+---
 
-Frequency Encoding
-Train-Test Split
-SMOTE Oversampling
-📈 Model Performance
-Metric	Score
-Accuracy	74%
-Precision	78%
-Recall	75%
+## 📊 Model Performance
 
-The Random Forest model successfully predicts late deliveries with balanced performance across precision and recall.
+| Metric | Score |
+|--------|-------|
+| Accuracy | 74% |
+| Precision | 78% |
+| Recall | 75% |
 
-💡 Key Business Insights
-More than half of the orders experienced delivery delays.
-Delivery delays significantly impacted overall profitability.
-Shipping mode and order region were major contributors to delivery delays.
-Delay rates varied across months, weekdays, and hours.
-High-profit orders also experienced delays, indicating opportunities for operational improvement.
-Predictive modeling can help proactively identify high-risk orders and improve delivery planning.
+---
 
-📂 Project Structure
+## 💡 Business Insights
+
+- More than half of the orders experienced delivery delays.
+- Delivery delays significantly affected profitability.
+- Shipping mode and order region were major delay drivers.
+- Delay rates varied across months, weekdays, and hours.
+- Random Forest achieved 74% prediction accuracy.
+
+---
+
+## 🚀 Future Improvements
+
+- Deploy using Flask/FastAPI
+- Power BI Dashboard
+- Hyperparameter Tuning
+- XGBoost & LightGBM
+
+---
+
+## 📂 Project Structure
+
+```text
 Supply-Chain-Analysis/
 │
 ├── data/
@@ -131,7 +134,16 @@ Supply-Chain-Analysis/
 │   └── Supply_Chain_Analysis.ipynb
 │
 ├── images/
-│   └── charts/
 │
 ├── README.md
+│
 └── requirements.txt
+```
+
+---
+
+## ⭐ Author
+
+**Honey**
+
+Data Analyst | Data Scientist | Machine Learning Enthusiast
